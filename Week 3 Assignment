@@ -1,0 +1,35 @@
+#SOBREVILLA, MA. DANIELLA M. 
+#WEEK 3 GRADED ASSIGNEMENT
+#FUNSTION TO GET MEAN
+makeVector <- function(x = numeric()) {
+        m <- NULL
+        set <- function(y) {
+                x <<- y
+                m <<- NULL
+                # makeVector() creates an R object that stores a vector and its mean
+        }
+        get <- function() x
+        setmean <- function(mean) m <<- mean
+        getmean <- function() m
+        list(set = set, get = get,
+             setmean = setmean,
+             getmean = getmean)
+            #mean - computes the mean of values
+}
+#FUNCTION TO GET THE MEAN SET OF DATA
+cachemean <- function(x, ...) {
+        m <- x$getmean()
+        if(!is.null(m)) 
+        }
+        data <- x$get()
+        m <- mean(data, ...)
+        x$setmean(m)
+        m
+        #mean - computes the mean of values
+}
+
+#ist.files - creates a character vector of the names of the files specified in our directory, 
+#numeric - creates a vector of objects of the class ‘numeric’
+#read.csv - reads data from a .csv file located within the list of files in our directory
+#c - concatenates values in a vector or list
+#mean - computes the mean of values
